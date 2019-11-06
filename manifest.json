@@ -1,10 +1,10 @@
 {
   "name": "Smart Reading Counter",
-  "version": "1.0",
+  "version": "1.1",
   "description": "A chrome extension showing the number of favourite and read books, taken and new tests on www.smartreading.ru",
   "manifest_version": 2,
   "permissions": [
-    "https://www.smartreading.ru/*"
+    "https://smartreading.ru/*"
   ],
   "icons": {
     "48": "icon48.png"
@@ -12,7 +12,7 @@
   "content_scripts": [
     {
       "matches": [
-        "https://www.smartreading.ru/personal/user/*"
+        "https://smartreading.ru/personal/user/*"
       ],
       "run_at": "document_idle",
       "js": [
